@@ -1,4 +1,5 @@
 package com.example.demo
 
-class UserRepository {
-}
+import org.springframework.data.jpa.repository.JpaRepository
+
+interface UserRepository : JpaRepository<User, Long>
